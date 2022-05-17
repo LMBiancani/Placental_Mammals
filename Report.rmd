@@ -54,7 +54,7 @@ The Afrotheria hypothesis (Figure 1a) places Afrotheria as sister to all other p
 
 A number of reasons have been suggested to account for the uncertainty surrounding the the root of placental mammals. Many studies face limitations with respect to gene sampling, taxon sampling and computational limits. Large-scale gene tree heterogeneity due to incomplete lineage sorting may have resulted from the apparent rapid divergence associated with the fragmentation of Pangea and Gondwana. If placental mammals evolved extremely rapidly, it may be theoretically impossible to resolve the note, suggesting a “hard polytomy” and an underlying evolutionary process that was not strictly bifurcating. Other sources of debate have been attributed to examples of non-phylogenetic signal such as incorrectly identified orthologs, long-branch attraction, and evolutionary rate variation (reviewed in Morgan et al. 2013, Tarver et al. 2016).  
 
-![**Figure 1.** Alternative hypotheses for the branching pattern at the root of placental mammals. Adapted from Morgan et a. 2013. Prior Studies, both molecular and morphological, have found support for all three hypotheses. **a. Afrotheria hypothesis** (supported by Murphy et al. 2001, Asher et al. 2007, Nishihara et al. 2007, Hallstrom and Janke 2010, McCormack et al. 2012, and Romiguier et al. 2013). **b. Xenarthra hypothesis** (supported by Keri’s et al. 2006, Charakov et al. 2009, and O’Leary et al. 2013). **c. Atlantogenata hypothesis** (supported by Murphy et al. 2007, Wildman et al. 2007, Prasad et al. 2008, Meredith et al. 2011, Song et al. 2012, Morgan et al. 2013, and Tarver et al. 2016).](./ImageFiles/Hypotheses.png)
+![Alternative hypotheses for the branching pattern at the root of placental mammals. Adapted from Morgan et a. 2013. Prior Studies, both molecular and morphological, have found support for all three hypotheses. **a. Afrotheria hypothesis** (supported by Murphy et al. 2001, Asher et al. 2007, Nishihara et al. 2007, Hallstrom and Janke 2010, McCormack et al. 2012, and Romiguier et al. 2013). **b. Xenarthra hypothesis** (supported by Keri’s et al. 2006, Charakov et al. 2009, and O’Leary et al. 2013). **c. Atlantogenata hypothesis** (supported by Murphy et al. 2007, Wildman et al. 2007, Prasad et al. 2008, Meredith et al. 2011, Song et al. 2012, Morgan et al. 2013, and Tarver et al. 2016).](./ImageFiles/Hypotheses.png)
 
 
 ### Methods
@@ -111,7 +111,7 @@ groups = as.data.frame(tipcategories)
 
 ```
 
-**Figure 2.** Maximum Likelihood Phylogenetic Analysis performed in RAxML for 30 placental mammal and 10 marsupial outgroup taxa. Orthologous loci were obtained from raw genomic reads using the SISRS pipeline. Support values represent 100 bootstrap replicates. Placental mammal clades are indicated by color-coded vertical lines.  These preliminary results appear to support the Afrotheria hypothesis (Figure 1a) for the branching pattern at the root of placental mammals. 
+Figure 2. Maximum Likelihood Phylogenetic Analysis performed in RAxML for 30 placental mammal and 10 marsupial outgroup taxa. Orthologous loci were obtained from raw genomic reads using the SISRS pipeline. Support values represent 100 bootstrap replicates. Placental mammal clades are indicated by color-coded vertical lines.  These preliminary results appear to support the Afrotheria hypothesis (Figure 1a) for the branching pattern at the root of placental mammals. 
 
 ### References
 
