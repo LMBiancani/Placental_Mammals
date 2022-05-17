@@ -1,0 +1,64 @@
+IQ-TREE multicore version 2.1.2 COVID-edition for Linux 64-bit built Jun 26 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    n084.cluster.com (AVX512, FMA3, 125 GB RAM)
+Command: iqtree2 -t RAxML_bipartitionsBranchLabels.tree_pi_m15_nogap -s /data/schwartzlab/Biancani/output_SISRS/mammals/SISRS_Run/alignment_pi_m15_nogap.phylip-relaxed --scf 100 --prefix tree_pi_m15_nogap_SCF -nt 36
+Seed:    591522 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Mar 28 09:01:20 2022
+Kernel:  AVX+FMA - 36 threads (36 CPU cores detected)
+
+Reading alignment file /data/schwartzlab/Biancani/output_SISRS/mammals/SISRS_Run/alignment_pi_m15_nogap.phylip-relaxed ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 38 sequences with 228718 columns, 228207 distinct patterns
+228676 parsimony-informative, 42 singleton sites, 0 constant sites
+                                  Gap/Ambiguity  Composition  p-value
+   1  Amblysomus_hottentotus_longiceps    6.30%    failed      0.02%
+   2  Bradypus_variegatus                33.77%    failed      0.00%
+   3  Ceratotherium_simum                83.75%    failed      0.00%
+   4  Chaetophractus_vellerosus          22.92%    passed      5.28%
+   5  Choloepus_didactylus               23.87%    failed      0.68%
+   6  Chrysochloris_asiatica             15.76%    failed      0.00%
+   7  Condylura_cristata                 11.99%    failed      0.00%
+   8  Dasypus_novemcinctus               17.77%    failed      0.00%
+   9  Didelphis_virginiana               17.73%    failed      0.00%
+  10  Echinops_telfairi                  24.83%    failed      0.00%
+  11  Elephantulus_edwardii              18.43%    failed      0.00%
+  12  Galeopterus_variegatus             55.05%    passed     57.52%
+  13  Gymnobelideus_leadbeateri          10.18%    failed      0.00%
+  14  Hippopotamus_amphibius              5.43%    failed      0.00%
+  15  Hydrodamalis_gigas                 11.01%    failed      0.00%
+  16  Loxodonta_africana                 13.27%    failed      0.00%
+  17  Manis_javanica                     21.00%    failed      4.87%
+  18  Megalonyx_jeffersonii             100.00%    passed     17.24%
+  19  Megatherium_americanum             99.98%    failed      0.89%
+  20  Microgale_talazaci                 10.44%    failed      0.00%
+  21  Mylodon_darwinii                   75.17%    failed      0.00%
+  22  Myrmecophaga_tridactyla            20.00%    failed      0.00%
+  23  Odobenus_rosmarus_divergens        30.85%    failed      0.00%
+  24  Pan_troglodytes                    34.22%    failed      0.00%
+  25  Phalanger_gymnotis                 14.95%    failed      0.00%
+  26  Potorous_gilbertii                 11.58%    failed      0.00%
+  27  Procavia_capensis                   9.80%    failed      0.00%
+  28  Pseudochirops_corinnae             13.41%    failed      0.00%
+  29  Pteropus_vampyrus                   4.98%    failed      0.00%
+  30  Rattus_norvegicus                  20.29%    failed      0.00%
+  31  Sarcophilus_harrisii               33.65%    failed      0.00%
+  32  Tamandua_tetradactyla              15.16%    failed      0.03%
+  33  Thylacinus_cynocephalus            50.35%    failed      0.00%
+  34  Tolypeutes_matacus                 32.35%    failed      0.00%
+  35  Trichechus_manatus_latirostris     96.30%    failed      0.00%
+  36  Tupaia_tana                        19.05%    failed      0.00%
+  37  Vombatus_ursinus                   15.19%    failed      0.00%
+  38  Wallabia_bicolor                   44.78%    failed      0.00%
+WARNING: 7 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                              30.15%  35 sequences failed composition chi2 test (p-value<5%; df=3)
+Reading tree RAxML_bipartitionsBranchLabels.tree_pi_m15_nogap ...
+un-rooted tree with 38 taxa and 73 branches
+Computing site concordance factor...
+0.598 sec
+Tree with concordance factors written to tree_pi_m15_nogap_SCF.cf.tree
+Annotated tree (best viewed in FigTree) written to tree_pi_m15_nogap_SCF.cf.tree.nex
+Tree with branch IDs written to tree_pi_m15_nogap_SCF.cf.branch
+Concordance factors per branch printed to tree_pi_m15_nogap_SCF.cf.stat
+Date and Time: Mon Mar 28 09:01:22 2022
