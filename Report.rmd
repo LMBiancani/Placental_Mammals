@@ -78,7 +78,8 @@ Phylogenetic Analyses were performed using RAxML (Stamatakis 2014) and SVDQuarte
 
 pi_m20_nogap <- "TreeFiles/RAxML_bipartitionsBranchLabels.tree_pi_m20_nogap"
 tree <- read.raxml(pi_m20_nogap)
-tree <- root(tree, node = 66) # reroot tree at outgroup
+tree <- root(tree, node = 66, resolve.root = TRUE) # reroot tree at outgroup
+#is.rooted(tree) # check if tree is rooted
 
 #ggtree(tree)
 
