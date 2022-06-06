@@ -1,0 +1,57 @@
+---
+title: "Trees in R"
+output: pdf_document
+author: "Leann M. Biancani"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+## Install required packages (if needed)
+#install.packages("BiocManager")
+#library("BiocManager")
+#BiocManager::install('ggtree') # could not install on URI Rstudio server
+#BiocManager::install('treeio')
+#install.packages('ggplot2')
+
+
+## load necessary packages:
+library('treeio')
+library('ggtree')
+library('ggplot2')
+
+```
+
+
+```{r tree figs, echo=FALSE, warning=FALSE}
+
+# import tree file
+
+pi_m20_nogap <- "TreeFiles/RAxML_bipartitionsBranchLabels.tree_pi_m20_nogap"
+tree <- read.raxml(pi_m20_nogap)
+tree <- root(tree, node = 66, resolve.root = TRUE) # reroot tree at outgroup
+#is.rooted(tree) # check if tree is rooted
+
+#ggtree(tree)
+
+# start plotting tree:
+ggtree(tree)  +
+  xlim(0,2) + #adjust plot area to allow more space for labels
+  geom_treescale() + # add a scalebar
+  geom_tiplab(size =3) + # add tip labels
+  geom_rootedge(rootedge = 0.1) + # display the root edge
+  geom_text(aes(label=bootstrap), size = 2, hjust=-.1) + # add bootstrap support to nodes (shifting labels slightly to the right)
+  #geom_text(aes(label=node), hjust=1) + # prints node numbers (info for rerooting: marsupial clade = node 66)
+  # Add clade labels
+  geom_cladelabel(node=55, label="Boreoeutheria", color="#08A69E", hjust=-1.25) +
+  geom_cladelabel(node=49, label="Xenarthra", color="#0276BA", hjust=-2.5) +
+  geom_cladelabel(node=43, label="Afrotheria", color="#1EB101", hjust=-1.75)
+
+## Notes:
+## Boreoeutheria: color = "#08A69E" node = 55
+## Xenarthra: color = "#0276BA"  node = 49
+## Afrotheria: color = "#1EB101" node = 43
+
+```
+
+Figure 2. Maximum Likelihood Phylogenetic Analysis performed in RAxML for 30 placental mammal and 10 marsupial outgroup taxa. Orthologous loci were obtained from raw genomic reads using the SISRS pipeline. Support values represent 100 bootstrap replicates. Placental mammal clades are indicated by color-coded vertical lines.  These preliminary results appear to support the Afrotheria hypothesis for the branching pattern at the root of placental mammals. 
