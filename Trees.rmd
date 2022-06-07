@@ -19,6 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library('treeio')
 library('ggtree')
 library('ggplot2')
+library('tibble')
 
 ```
 
@@ -32,20 +33,32 @@ tree <- read.raxml(pi_m20_nogap)
 tree <- root(tree, node = 66, resolve.root = TRUE) # reroot tree at outgroup
 #is.rooted(tree) # check if tree is rooted
 
-#ggtree(tree)
+# switch to midpoint rooting of the root branch:
+# code from https://alexknyshov.github.io/R/page3.html (see end of document)
+tree@phylo$edge.length[which(!(tree@phylo$edge[,1] %in% tree@phylo$edge[,2]))] <- sum(tree@phylo$edge.length[which(!(tree@phylo$edge[,1] %in% tree@phylo$edge[,2]))])/2
+
+# replace missing support value on outgroup node:
+## before re-rooting there was only 1 support value for the (now) root branch, which appears at the placental node. treeio reroot removes the empty element the occurs at the end of the support value vector during rerooting. The value needs to be added as the last row to the bootstrap table in the treedata object. The add_row command requires the "tibble" library.
+tree@data <- add_row(tree@data, node=tail(tree@data$node, n=1)+1, bootstrap=100)
+
+# remove problematic taxa from tree using drop.tip:
+# Bradypus variegatus - a sloth, highly supported as sister to Chimps (probably due to human contamination)
+# Megatherium americanum - extinct sloth recovered as sister to Rhinos (most likely degraded fossil data)
+# Megatherium jeffersonii - extinct sloth recovered as sister to Rhinos (most likely degraded fossil data)
+tree <- drop.tip(tree,c("Bradypus_variegatus","Megatherium_americanum","Megalonyx_jeffersonii"))
 
 # start plotting tree:
 ggtree(tree)  +
   xlim(0,2) + #adjust plot area to allow more space for labels
   geom_treescale() + # add a scalebar
   geom_tiplab(size =3) + # add tip labels
-  geom_rootedge(rootedge = 0.1) + # display the root edge
+  #geom_rootedge(rootedge = 2) + # display the root edge
   geom_text(aes(label=bootstrap), size = 2, hjust=-.1) + # add bootstrap support to nodes (shifting labels slightly to the right)
-  #geom_text(aes(label=node), hjust=1) + # prints node numbers (info for rerooting: marsupial clade = node 66)
+  #geom_text(aes(label=node), hjust=1, size =2) + # prints node numbers
   # Add clade labels
-  geom_cladelabel(node=55, label="Boreoeutheria", color="#08A69E", hjust=-1.25) +
-  geom_cladelabel(node=49, label="Xenarthra", color="#0276BA", hjust=-2.5) +
-  geom_cladelabel(node=43, label="Afrotheria", color="#1EB101", hjust=-1.75)
+  geom_cladelabel(node=53, label="Boreoeutheria", color="#08A69E", hjust=-1.25) +
+  geom_cladelabel(node=47, label="Xenarthra", color="#0276BA", hjust=-2.5) +
+  geom_cladelabel(node=38, label="Afrotheria", color="#1EB101", hjust=-1.75)
 
 ## Notes:
 ## Boreoeutheria: color = "#08A69E" node = 55

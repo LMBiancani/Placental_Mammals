@@ -64,7 +64,7 @@ Paired-end Illumina reads were obtained from the [European Nucleotide Archive](h
 | Xenarthra | [ERR3308860](https://www.ebi.ac.uk/ena/browser/view/ERR3308860?show=reads) | *Megatherium americanum* |
 | Xenarthra | [SRR1161598](https://www.ebi.ac.uk/ena/browser/view/SRR1161598?show=reads) | *Mylodon darwinii* |
 | Xenarthra | [SRR11431893](https://www.ebi.ac.uk/ena/browser/view/SRR11431893?show=reads) | *Myrmecophaga tridactyla* |
-| Xenarthra | [SRR7704834](https://www.ebi.ac.uk/ena/browser/view/SRR7704834?show=reads) | *Tamandua tetradactyla * |
+| Xenarthra | [SRR7704834](https://www.ebi.ac.uk/ena/browser/view/SRR7704834?show=reads) | *Tamandua tetradactyla* |
 | Metatheria | [SRR11362410](https://www.ebi.ac.uk/ena/browser/view/SRR11362410?show=reads) | *Sarcophilus harrisii* |
 | Metatheria | [SRR8616958](https://www.ebi.ac.uk/ena/browser/view/SRR8616958?show=reads) | *Didelphis virginiana* |
 | Metatheria | [ERR1744026](https://www.ebi.ac.uk/ena/browser/view/ERR1744026?show=reads) | *Wallabia bicolor* |
