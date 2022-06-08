@@ -1,4 +1,6 @@
-# Placental Mammals - ReadMe
+---
+title: "Placental Mammals - ReadMe"
+---
 
 This repository contains preliminary analyses and results for a genome-scale phylogenetic analysis of placental mammals.
 
