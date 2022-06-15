@@ -1,6 +1,6 @@
 # Marsupialia Photo Attributions
 
-## Sources and licence information for Afrotheria photos used a poster for the [2022 Evolution Conference](https://www.evolutionmeetings.org)
+## Sources and licence information for Marsupialia photos used a poster for the [2022 Evolution Conference](https://www.evolutionmeetings.org)
 
 [Sarcophilus harrisii](https://commons.wikimedia.org/wiki/File:Tasmanian_Devil_(24170311598).jpg) - Mathias Appel, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en), via Wikimedia Commons
 
