@@ -1,6 +1,6 @@
 # Photo Attributions
 
-## Sources and licence information for photos used in a poster for the [2022 Evolution Conference](https://www.evolutionmeetings.org)
+## Sources and licence information for photos used in a poster for [Evolution 2022](https://www.evolutionmeetings.org)
 
 ### Afrotheria
 
