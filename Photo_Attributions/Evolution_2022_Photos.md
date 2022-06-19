@@ -247,3 +247,30 @@
 <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/2/2c/Wombat_from_Adelade.jpg">
 	<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Wombat_from_Adelade.jpg" alt="Vombatus ursinus" width="200"/>
 </a>
+
+### Silhouettes
+
+[Loxodonta](http://phylopic.org/image/4e9a0149-9a93-4cd4-ab49-4a98958444f4/) - Agnello Picorelli, [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/), via PhyloPic 
+
+<a target="_blank" href="http://phylopic.org/assets/images/submissions/4e9a0149-9a93-4cd4-ab49-4a98958444f4.1024.png">
+	<img src="http://phylopic.org/assets/images/submissions/4e9a0149-9a93-4cd4-ab49-4a98958444f4.512.png" alt="Loxodonta" width="200"/>
+</a>
+
+[Dasypus](http://phylopic.org/image/5d59b5ce-c1dd-40f6-b295-8d2629b9775e/) - Steven Traver, [Public Domain](http://creativecommons.org/publicdomain/zero/1.0/), via PhyloPic 
+
+<a target="_blank" href="http://phylopic.org/assets/images/submissions/5d59b5ce-c1dd-40f6-b295-8d2629b9775e.1024.png">
+	<img src="http://phylopic.org/assets/images/submissions/5d59b5ce-c1dd-40f6-b295-8d2629b9775e.512.png" alt="Dasypus" width="200"/>
+</a>
+
+[Rattus](http://phylopic.org/image/570c7d9e-e6d1-46f5-b165-988981bfc5f6/) - Alexandra van der Geer, [Public Domain](http://creativecommons.org/publicdomain/zero/1.0/), via PhyloPic 
+
+<a target="_blank" href="http://phylopic.org/assets/images/submissions/570c7d9e-e6d1-46f5-b165-988981bfc5f6.1024.png">
+	<img src="http://phylopic.org/assets/images/submissions/570c7d9e-e6d1-46f5-b165-988981bfc5f6.512.png" alt="Rattus" width="200"/>
+</a>
+
+[Wallabia](http://phylopic.org/image/eccfc4b3-faee-4384-b35b-64c788f30846/) - Michael Scroggie, [Public Domain](http://creativecommons.org/publicdomain/zero/1.0/), via PhyloPic 
+
+<a target="_blank" href="http://phylopic.org/assets/images/submissions/eccfc4b3-faee-4384-b35b-64c788f30846.1024.png">
+	<img src="http://phylopic.org/assets/images/submissions/eccfc4b3-faee-4384-b35b-64c788f30846.512.png" alt="Wallabia" width="200"/>
+</a>
+
